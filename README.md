@@ -1,1 +1,1 @@
-# travel-journal
+# Travel Journal with React & NodeJs
