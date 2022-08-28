@@ -1,12 +1,12 @@
 # Scrimba Travel Journal project with React & NodeJs
 
-# Built With
+## Built With
 - HTML5
 - CSS / Flexbox
 - React.js
 - Node.js
 
-# What I Learned
+## What I Learned
 - How to use .map() and Props 
 - How to create hover effect on image 
 ```
