@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px){
+  img#card--image {display: block; width: 100%;}
+}
+
+/*NAV*/
+nav {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    background: #F55A5A;
+}
+
+.nav--globe {
+    height: 24px;
+}
+
+.nav--text {
+    line-height: 18px;
+    letter-spacing: -0.075em;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+
+    color: #FFFFFF;
+}
+
+/*CARD*/
+.card {
+    display: flex;
+    flex-direction: row;
+    padding: 32px 0;
+}
+
+.cards--list {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 48px;
+}
+
+.card--image {
+    height: 100%;
+    width: 320px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 5px;
+
+    transform: scale(1);
+    transition: all 650ms ease-in-out;
+
+}
+
+.card--image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
+      0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+    /* filter: brightness(80%); */
+  }
+
+.card--stats {
+     margin-left: 16px;
+     padding: 8px ;
+   
+}
+
+.card--location {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 0 10px 0 5px;
+    letter-spacing: 0.17em;
+
+    font-family: 'Inter';
+    color: #2B283A;
+}
+
+.card--title {
+    margin: 12px 0;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Inter';
+    line-height: 30px;
+
+    color: #2B283A;
+}
+
+.card--gmaps {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+
+    /* identical to box height */
+    text-decoration-line: underline;
+    color: #918E9B;
+}
+
+.card--description {
+    max-width: 800px;
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+
+    color: #2B283A;
+}
+
+/* CARD SEPERATOR */
+.cards--list > .card + .card {
+    padding: 2em 0;
+    border-top: 1px solid ;
+  }
+  
+  .cards--list .card:first-child {
+    padding-top: 0;
+  }
+  
+  .cards--list .card:last-child {
+    padding-bottom: 0;
+  }
+
+  .footer {
+    justify-content: center;
+    background: #F55A5A;
+    padding: 20px 36px;
+    text-align: center;
+
+  }
+
+  .footer--text {
+    color: white;
+  }
+  
+/* center card info when browser made smaller */
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+    }
+
+    .card--stats {
+      margin: 16px 0 0 0;
+      padding: 0;
+    }
+  }
+
+
