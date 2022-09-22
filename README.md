@@ -1,5 +1,9 @@
 # Scrimba Travel Journal project with React & NodeJs
 
+## Screenshot
+<img width="813" alt="traveljournal-screenshoot" src="https://user-images.githubusercontent.com/109000703/191742643-2e19fc81-9fc1-4c45-b9bf-3d437bda1b1c.png">
+
+
 ## Built With
 - HTML5
 - CSS / Flexbox
